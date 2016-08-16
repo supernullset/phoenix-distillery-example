@@ -2,7 +2,7 @@ defmodule PhoenixDistillery.UserSocket do
   use Phoenix.Socket
 
   ## Channels
-  # channel "rooms:*", PhoenixDistillery.RoomChannel
+  channel "heartbeat:*", PhoenixDistillery.HeartbeatChannel
 
   ## Transports
   transport :websocket, Phoenix.Transports.WebSocket
