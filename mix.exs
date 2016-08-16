@@ -18,7 +18,7 @@ defmodule PhoenixDistillery.Mixfile do
   # Type `mix help compile.app` for more information.
   def application do
     [mod: {PhoenixDistillery, []},
-     applications: [:phoenix, :phoenix_html, :cowboy, :logger, :gettext,
+     applications: [:phoenix, :phoenix_pubsub, :phoenix_html, :cowboy, :logger, :gettext,
                     :phoenix_ecto, :postgrex]]
   end
 
