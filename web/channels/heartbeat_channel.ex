@@ -13,7 +13,7 @@ defmodule PhoenixDistillery.HeartbeatChannel do
 
   def handle_info({:beat, i}, socket) do
     broadcast!(socket, "ping", %{body: i})
-    Process.send_after(self, {:beat, i + 2}, 2000)
+    Process.send_after(self, {:beat, i + 1}, 2000)
     {:noreply, socket}
   end
 
